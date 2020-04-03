@@ -123,7 +123,7 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 - Followe given Comands to add GUI option in ubuntu.
 
 - Check For update and install upgrads run follwing command.
-  [ sudo apt update &&  sudo apt upgrade ]
+  > sudo apt update &&  sudo apt upgrade
   
 - We will connecting using windows remote desktop, edit the ssds_config file in your linux instance for allowing password authantication.
   > sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
@@ -148,11 +148,28 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 - Restar xrdp service.
   > sudo service xrdp restart
-
+  
+- Now, exit from the instance.
+  > exit
 
 ### step 4 Configure PuTTY to Tunnel RDP traffic
 
-- 
-
+- Open PuTTY.
+- Load Session in which we saved information.
+  [ If you have not saved session information then you have to put host name and browse that private key file again ]
+- Now, Go to Connections -> SSH -> Auth -> Tunnels.
+- Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
+- Click on open.
+- Login as ubuntu [If your instance's AMI is ubuntu]
+- For checking port is working or not follow given command.
+ > netstat -antp
+ - Remember IPV4 which is in resukt of above command and source port address.
+ 
 ### step 5 Test with RDP
+
+- Start Remote Desktop from your Windows Operating System.
+- Give IPV4 and source port with (:) seperated and connect.
+- you can use EC2 instance with GUI.
+- Now, Give Username as ubuntu and password which you had set for root privileges.
+
 
