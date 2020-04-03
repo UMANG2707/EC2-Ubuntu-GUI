@@ -118,6 +118,9 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 ### step 3 Add GUI options to Ubuntu
 
+- Followe given Comands to add GUI option in ubuntu.
+
+
 ### step 4 Configure PuTTY to Tunnel RDP traffic
 
 ### step 5 Test with RDP
