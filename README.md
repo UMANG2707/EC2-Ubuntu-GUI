@@ -155,9 +155,16 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 4 Configure PuTTY to Tunnel RDP traffic
 
 - Open PuTTY.
+  <img width="572" alt="2020-04-03 (19)" src="https://user-images.githubusercontent.com/48994342/78327810-58e4ed00-759b-11ea-94d3-f217dc8be7b3.png">
+
 - Load Session in which we saved information.
   [ If you have not saved session information then you have to put host name and browse that private key file again ]
+
+  <img width="325" alt="2020-04-03 (22)" src="https://user-images.githubusercontent.com/48994342/78329066-5afc7b00-759e-11ea-8bdc-5fe022f7e06a.png">
+
 - Now, Go to Connections -> SSH -> Auth -> Tunnels.
+
+
 - Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
 - Click on open.
 - Login as ubuntu [If your instance's AMI is ubuntu]
