@@ -2,6 +2,7 @@
 With using amazon free account create ec2 ubuntu instance and access it's GUI using remote desktop.
 
 ###  3 Steps to connect to the instance.
+
 1. Configure Free Tier Ubuntu instance on AWS EC2
 2. Connect to Ubuntu instance via SSH with PuTTY
 3. Add GUI options to Ubuntu
@@ -56,6 +57,7 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 2 Connect to Ubuntu instance via SSH with PuTTY
 .
 - For Download PuTTY open link given below.
+
  ##### https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
  
  <img width="890" alt="2020-04-03 (11)" src="https://user-images.githubusercontent.com/48994342/78327753-41a5ff80-759b-11ea-9f5f-a41cd2c04db1.png">
@@ -119,6 +121,32 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 3 Add GUI options to Ubuntu
 
 - Followe given Comands to add GUI option in ubuntu.
+- Check For update and install upgrads run follwing command.
+  >> sudo apt update &&  sudo apt upgrade
+  
+- We will connecting using windows remote desktop, edit the ssds_config file in your linux instance for allowing password authantication.
+  >> sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+
+- Restart SSH daemon to make this change.
+  >> sudo /etc/init.d/ssh restart
+
+- To gain root privileges and set password for ubuntu user for security.
+  >> sudo passwd ubuntu
+
+- Install xrdp tool for desktop environment (Virtual Network Computer).
+  >> sudo apt install xrdp xfce4 xfce4-goodies tightvncserver
+
+- Make xfce4 default window manager for Remote Desktop Connection.
+  >> echo xfce4-session$ /home/ubuntu/.xsession  ##### NOTE: Replace the $ with the Greater Than Sign
+
+- Copy .xsession to the /etc/skel folder so xfce4 is set as default window manager for any new user account.
+  >> sudo cp /home/ubuntu/.xsession /etc/skel
+
+- Run sed command to allow changing of the host port you will connect to.
+  >> sudo sed -i '0,/-1/s//ask-1/' /etc/xrdp/xrdp.ini
+
+- Restar xrdp service.
+  >> sudo service xrdp restart
 
 
 ### step 4 Configure PuTTY to Tunnel RDP traffic
