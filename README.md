@@ -121,35 +121,38 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 3 Add GUI options to Ubuntu
 
 - Followe given Comands to add GUI option in ubuntu.
+
 - Check For update and install upgrads run follwing command.
-  >> sudo apt update &&  sudo apt upgrade
+  [ sudo apt update &&  sudo apt upgrade ]
   
 - We will connecting using windows remote desktop, edit the ssds_config file in your linux instance for allowing password authantication.
-  >> sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+  > sudo sed -i 's/^PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
 
 - Restart SSH daemon to make this change.
-  >> sudo /etc/init.d/ssh restart
+  > sudo /etc/init.d/ssh restart
 
 - To gain root privileges and set password for ubuntu user for security.
-  >> sudo passwd ubuntu
+  > sudo passwd ubuntu
 
 - Install xrdp tool for desktop environment (Virtual Network Computer).
-  >> sudo apt install xrdp xfce4 xfce4-goodies tightvncserver
+  > sudo apt install xrdp xfce4 xfce4-goodies tightvncserver
 
 - Make xfce4 default window manager for Remote Desktop Connection.
-  >> echo xfce4-session$ /home/ubuntu/.xsession  ##### NOTE: Replace the $ with the Greater Than Sign
+  > echo xfce4-session$ /home/ubuntu/.xsession  ##### NOTE: Replace the $ with the Greater Than Sign
 
 - Copy .xsession to the /etc/skel folder so xfce4 is set as default window manager for any new user account.
-  >> sudo cp /home/ubuntu/.xsession /etc/skel
+  > sudo cp /home/ubuntu/.xsession /etc/skel
 
 - Run sed command to allow changing of the host port you will connect to.
-  >> sudo sed -i '0,/-1/s//ask-1/' /etc/xrdp/xrdp.ini
+  > sudo sed -i '0,/-1/s//ask-1/' /etc/xrdp/xrdp.ini
 
 - Restar xrdp service.
-  >> sudo service xrdp restart
+  > sudo service xrdp restart
 
 
 ### step 4 Configure PuTTY to Tunnel RDP traffic
+
+- 
 
 ### step 5 Test with RDP
 
