@@ -168,8 +168,7 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 - Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
   [Private IPV4]
-
-   <img width="329" alt="2020-04-03 (38)" src="https://user-images.githubusercontent.com/48994342/78418825-9316c300-765d-11ea-91a0-a4623c3b2c57.png">
+   
 
 - Click on open.
 
@@ -181,11 +180,9 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 5 Test with RDP
 
 - Start Remote Desktop from your Windows Operating System.
-  
-<img width="299" alt="2020-04-03 (42)" src="https://user-images.githubusercontent.com/48994342/78418837-a1fd7580-765d-11ea-8f43-53cce60bb03d.png">
-<img width="488" alt="2020-04-03 (43)" src="https://user-images.githubusercontent.com/48994342/78418840-a88bed00-765d-11ea-80e3-16ae2470cc71.png">
-<img width="323" alt="2020-04-03 (40)" src="https://user-images.githubusercontent.com/48994342/78418844-ade93780-765d-11ea-9ed0-a23d9603d248.png">
 - Give IPV4 and source port with (:) seperated and connect.
+
+     <img width="290" alt="2020-04-03 (44)" src="https://user-images.githubusercontent.com/48994342/78419202-0a018b00-7661-11ea-9a77-ac5c3f1a3983.png">
 
 - you can use EC2 instance with GUI.
 
@@ -196,7 +193,6 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 - Ready to use..!!
 
    <img width="473" alt="2020-04-03 (50)" src="https://user-images.githubusercontent.com/48994342/78418830-99a53a80-765d-11ea-907f-9bc6d6f26397.png">
-
 
 
 
