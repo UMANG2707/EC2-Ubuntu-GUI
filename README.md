@@ -158,6 +158,7 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 - Load Session in which we saved information.
   [ If you have not saved session information then you have to put host name and browse that private key file again ]
+  
 
   <img width="325" alt="2020-04-03 (22)" src="https://user-images.githubusercontent.com/48994342/78329066-5afc7b00-759e-11ea-8bdc-5fe022f7e06a.png">
 
@@ -168,6 +169,9 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 - Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
   [Private IPV4]
 
+<img width="742" alt="2020-04-03 (39)" src="https://user-images.githubusercontent.com/48994342/78419400-0c64e480-7663-11ea-978d-0df10b052da0.png">
+
+
 - Click on Add.
    
    <img width="323" alt="2020-04-03 (40)" src="https://user-images.githubusercontent.com/48994342/78419310-2ce06f00-7662-11ea-9bae-9d82cb3c445b.png">
@@ -176,6 +180,10 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 - Click on open.
 
 - Login as ubuntu [If your instance's AMI is ubuntu]
+
+
+<img width="530" alt="2020-04-03 (28)" src="https://user-images.githubusercontent.com/48994342/78419408-171f7980-7663-11ea-97d1-11441684d9a8.png">
+
 - For checking port is working or not follow given command.
    > netstat -antp
      <img width="488" alt="2020-04-03 (43)" src="https://user-images.githubusercontent.com/48994342/78419361-af692e80-7662-11ea-923f-f69a7f00644a.png">
