@@ -155,7 +155,6 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 4 Configure PuTTY to Tunnel RDP traffic
 
 - Open PuTTY.
-  <img width="572" alt="2020-04-03 (19)" src="https://user-images.githubusercontent.com/48994342/78327810-58e4ed00-759b-11ea-94d3-f217dc8be7b3.png">
 
 - Load Session in which we saved information.
   [ If you have not saved session information then you have to put host name and browse that private key file again ]
@@ -168,6 +167,10 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 - Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
   [Private IPV4]
+
+- Click on Add.
+   
+   <img width="323" alt="2020-04-03 (40)" src="https://user-images.githubusercontent.com/48994342/78419310-2ce06f00-7662-11ea-9bae-9d82cb3c445b.png">
    
 
 - Click on open.
@@ -175,7 +178,7 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 - Login as ubuntu [If your instance's AMI is ubuntu]
 - For checking port is working or not follow given command.
  > netstat -antp
- - Remember IPV4 which is in resukt of above command and source port address.
+ - Remember IPV4 which is in result of above command and source port address.
  
 ### step 5 Test with RDP
 
