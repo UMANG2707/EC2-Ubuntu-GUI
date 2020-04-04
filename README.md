@@ -177,7 +177,9 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 
 - Login as ubuntu [If your instance's AMI is ubuntu]
 - For checking port is working or not follow given command.
- > netstat -antp
+   > netstat -antp
+     <img width="488" alt="2020-04-03 (43)" src="https://user-images.githubusercontent.com/48994342/78419361-af692e80-7662-11ea-923f-f69a7f00644a.png">
+
  - Remember IPV4 which is in result of above command and source port address.
  
 ### step 5 Test with RDP
