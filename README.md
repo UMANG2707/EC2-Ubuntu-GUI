@@ -163,10 +163,16 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
   <img width="325" alt="2020-04-03 (22)" src="https://user-images.githubusercontent.com/48994342/78329066-5afc7b00-759e-11ea-8bdc-5fe022f7e06a.png">
 
 - Now, Go to Connections -> SSH -> Auth -> Tunnels.
-
+  
+  <img width="329" alt="2020-04-03 (37)" src="https://user-images.githubusercontent.com/48994342/78418824-90b46900-765d-11ea-8278-0c61b48522a1.png">
 
 - Give Source port as 8888 and in Destination field give private IPV4 of your instace with addition of : and another port as 3389.
+  [Private IPV4]
+
+   <img width="329" alt="2020-04-03 (38)" src="https://user-images.githubusercontent.com/48994342/78418825-9316c300-765d-11ea-91a0-a4623c3b2c57.png">
+
 - Click on open.
+
 - Login as ubuntu [If your instance's AMI is ubuntu]
 - For checking port is working or not follow given command.
  > netstat -antp
@@ -175,8 +181,29 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
 ### step 5 Test with RDP
 
 - Start Remote Desktop from your Windows Operating System.
+  
+<img width="299" alt="2020-04-03 (42)" src="https://user-images.githubusercontent.com/48994342/78418837-a1fd7580-765d-11ea-8f43-53cce60bb03d.png">
+<img width="488" alt="2020-04-03 (43)" src="https://user-images.githubusercontent.com/48994342/78418840-a88bed00-765d-11ea-80e3-16ae2470cc71.png">
+<img width="323" alt="2020-04-03 (40)" src="https://user-images.githubusercontent.com/48994342/78418844-ade93780-765d-11ea-9ed0-a23d9603d248.png">
 - Give IPV4 and source port with (:) seperated and connect.
+
 - you can use EC2 instance with GUI.
+
 - Now, Give Username as ubuntu and password which you had set for root privileges.
+
+   <img width="284" alt="2020-04-03 (47)" src="https://user-images.githubusercontent.com/48994342/78418834-9b6efe00-765d-11ea-977a-0071043801a7.png">
+   
+- Ready to use..!!
+
+   <img width="473" alt="2020-04-03 (50)" src="https://user-images.githubusercontent.com/48994342/78418830-99a53a80-765d-11ea-907f-9bc6d6f26397.png">
+
+
+
+
+
+
+
+
+
 
 
