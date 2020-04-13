@@ -138,7 +138,8 @@ With using amazon free account create ec2 ubuntu instance and access it's GUI us
   > sudo apt install xrdp xfce4 xfce4-goodies tightvncserver
 
 - Make xfce4 default window manager for Remote Desktop Connection.
-  > echo xfce4-session$ /home/ubuntu/.xsession  ##### NOTE: Replace the $ with the Greater Than Sign
+  > echo xfce4-session$ /home/ubuntu/.xsession  
+  ***NOTE: Replace the $ with the Greater Than Sign***
 
 - Copy .xsession to the /etc/skel folder so xfce4 is set as default window manager for any new user account.
   > sudo cp /home/ubuntu/.xsession /etc/skel
